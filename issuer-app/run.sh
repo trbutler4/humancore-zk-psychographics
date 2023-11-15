@@ -2,15 +2,18 @@
 
 set -e
 
+# loading variables from .env file 
+source .env
+
 # Use the code snippet to generate a DID (Decentralized Identifier) from the contract address.
 # You can find the code snippet at: https://github.com/iden3/go-iden3-core/blob/be566366eb43673010175a6a2347c99db9b55ab2/did_test.go#L369-L380
 # Replace "ethAddrHex" with value of "ONCHAIN_ISSUER_CONTRACT_ADDRESS" (without 0x) to generate the ONCHAIN_ISSUER_DID.
-ONCHAIN_ISSUER_DID=
+#ONCHAIN_ISSUER_DID=
 
-ONCHAIN_ISSUER_CONTRACT_ADDRESS=
-URL_MUMBAI_NODE=
-URL_POLYGON_NODE=
-ONCHAIN_CONTRACT_OWNER=
+#ONCHAIN_ISSUER_CONTRACT_ADDRESS=
+#URL_MUMBAI_NODE=
+#URL_POLYGON_NODE=
+#ONCHAIN_CONTRACT_OWNER=
 MUMBAI_CONTRACT_STATE_ADDRESS=0x134B1BE34911E39A8397ec6289782989729807a4
 MAIN_CONTRACT_STATE_ADDRESS=0xdc2A724E6bd60144Cde9DEC0A38a26C619d84B90
 ONCHAIN_ISSUER_CONTRACT_BLOCKCHAIN="<eth|polygon>"
